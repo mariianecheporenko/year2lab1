@@ -4,4 +4,7 @@ project(year2lab1)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(year2lab1
-    main.cpp)
+    main.cpp
+        Statistics.h
+        RandomCell.h
+        Statistics.cpp)
