@@ -18,7 +18,7 @@ public:
 
 
 	std::size_t idx(int row, int col) const {
-		if (!isValid(row, col)) throw std::out_of_range("Board::idx: row/col out of range");
+		if (!isValid(row, col)) throw std::out_of_range("row/col out of range");
 		return static_cast<std::size_t>(row) * static_cast<std::size_t>(n_) + static_cast<std::size_t>(col);
 	}
 
