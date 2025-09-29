@@ -2,16 +2,16 @@
 #define STATISTICS_H
 
 #include <vector>
+#include <stdexcept>
 using namespace std;
 
 class Statistics {
     public:
-    Statistics(const vector<int>& freqs);
+    template<typename Iter>
+        Statistics(Iter begin, Iter end) : frequencies(begin, end) {}
 
-    double averageCount() const;
-
-    double averageCount();
-    double medianCount();
+    double average() const;
+    double median();
 
     private:
     vector<int> frequencies;

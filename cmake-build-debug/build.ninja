@@ -51,13 +51,31 @@ build cmake_object_order_depends_target_year2lab1: phony || .
 
 build CMakeFiles/year2lab1.dir/main.cpp.obj: CXX_COMPILER__year2lab1_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/main.cpp || cmake_object_order_depends_target_year2lab1
   DEP_FILE = CMakeFiles\year2lab1.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\year2lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\year2lab1.dir
 
 build CMakeFiles/year2lab1.dir/Statistics.cpp.obj: CXX_COMPILER__year2lab1_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/Statistics.cpp || cmake_object_order_depends_target_year2lab1
   DEP_FILE = CMakeFiles\year2lab1.dir\Statistics.cpp.obj.d
-  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\year2lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\year2lab1.dir
+
+build CMakeFiles/year2lab1.dir/Board.cpp.obj: CXX_COMPILER__year2lab1_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/Board.cpp || cmake_object_order_depends_target_year2lab1
+  DEP_FILE = CMakeFiles\year2lab1.dir\Board.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\year2lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\year2lab1.dir
+
+build CMakeFiles/year2lab1.dir/RandomCell.cpp.obj: CXX_COMPILER__year2lab1_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/RandomCell.cpp || cmake_object_order_depends_target_year2lab1
+  DEP_FILE = CMakeFiles\year2lab1.dir\RandomCell.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\year2lab1.dir
+  OBJECT_FILE_DIR = CMakeFiles\year2lab1.dir
+
+build CMakeFiles/year2lab1.dir/experiment.cpp.obj: CXX_COMPILER__year2lab1_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/experiment.cpp || cmake_object_order_depends_target_year2lab1
+  DEP_FILE = CMakeFiles\year2lab1.dir\experiment.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\year2lab1.dir
   OBJECT_FILE_DIR = CMakeFiles\year2lab1.dir
 
@@ -69,8 +87,8 @@ build CMakeFiles/year2lab1.dir/Statistics.cpp.obj: CXX_COMPILER__year2lab1_unsca
 #############################################
 # Link the executable year2lab1.exe
 
-build year2lab1.exe: CXX_EXECUTABLE_LINKER__year2lab1_Debug CMakeFiles/year2lab1.dir/main.cpp.obj CMakeFiles/year2lab1.dir/Statistics.cpp.obj
-  FLAGS = -g
+build year2lab1.exe: CXX_EXECUTABLE_LINKER__year2lab1_Debug CMakeFiles/year2lab1.dir/main.cpp.obj CMakeFiles/year2lab1.dir/Statistics.cpp.obj CMakeFiles/year2lab1.dir/Board.cpp.obj CMakeFiles/year2lab1.dir/RandomCell.cpp.obj CMakeFiles/year2lab1.dir/experiment.cpp.obj
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\year2lab1.dir
   POST_BUILD = cd .

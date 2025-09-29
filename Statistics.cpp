@@ -1,25 +1,29 @@
 #include "Statistics.h"
 
 #include <algorithm>
+#include <numeric>
 using namespace std;
 
-Statistics::Statistics(const vector<int>& freqs) : frequencies(freqs) {}
 
-double Statistics::averageCount() const {
-
-    long long sum = 0;
-    for (int i = 0; i < frequencies.size(); i++) {
-        sum+=frequencies[i];
+double Statistics::average() const {
+    if (frequencies.empty()) {
+        throw runtime_error("Empty list");
     }
-    return (double)sum / frequencies.size();
+    long long sum = 0;
+    sum = accumulate(frequencies.begin(), frequencies.end(), 0LL);
+return static_cast<double>(sum) / static_cast<double>(frequencies.size());
 }
 
-double Statistics::medianCount() {
-    vector<int> sorted = frequencies;
+double Statistics::median() {
+    if (frequencies.empty()) {
+        throw runtime_error("Empty list");
+    }
+
+    auto sorted = frequencies;
     sort(sorted.begin(), sorted.end());
 
-    int n = sorted.size();
-    if (n % 2 == 0) {
+    const auto n = sorted.size();
+    if (n % 2 == 1) {
         return sorted[n / 2];
     }
     return (sorted[n / 2 - 1] + sorted[n / 2]) / 2.0;
