@@ -12,4 +12,16 @@ add_executable(year2lab1
         Board.cpp
         experiment.h
         RandomCell.cpp
-        experiment.cpp)
+        experiment.cpp
+       )
+add_executable(experiment_test
+        programTest.cpp
+        Statistics.h
+        RandomCell.h
+        Statistics.cpp
+        Board.cpp
+        experiment.h
+        RandomCell.cpp
+        experiment.cpp
+)
+

@@ -1,3 +1,4 @@
 C:/Users/PC Home/Documents/GitHub/year2lab1/cmake-build-debug/CMakeFiles/year2lab1.dir
+C:/Users/PC Home/Documents/GitHub/year2lab1/cmake-build-debug/CMakeFiles/experiment_test.dir
 C:/Users/PC Home/Documents/GitHub/year2lab1/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/PC Home/Documents/GitHub/year2lab1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

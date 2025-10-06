@@ -1,12 +1,17 @@
 # ninja log v6
-64	661	7807674438457205	CMakeFiles/year2lab1.dir/Board.cpp.obj	e344639e3133d46e
-53	2120	7803101237497858	CMakeFiles/year2lab1.dir/main.cpp.obj	c584cf7da7072a3c
-885	1028	7807676359492057	year2lab1.exe	ae9ba1285962e080
+52	2055	7814938161212709	CMakeFiles/year2lab1.dir/main.cpp.obj	c584cf7da7072a3c
+37	819	7814950009938952	CMakeFiles/experiment_test.dir/RandomCell.cpp.obj	f1a218c2a8d57b34
+17	412	7814962204238773	CMakeFiles/year2lab1.dir/Board.cpp.obj	e344639e3133d46e
 18	884	7807676350826582	CMakeFiles/year2lab1.dir/RandomCell.cpp.obj	25b9069133b6fbd6
-3	450	7807719083316015	build.ninja	470534ca852ac7e0
-18	897	7807675231456105	CMakeFiles/year2lab1.dir/Statistics.cpp.obj	4a88e896fba941be
+412	564	7814962208193159	year2lab1.exe	320b643e631bc0a6
+69	2122	7814938161382090	CMakeFiles/year2lab1.dir/experiment.cpp.obj	711bf5e902853bf1
+12	321	7814962454742133	build.ninja	470534ca852ac7e0
 36	1210	7807674438215218	CMakeFiles/year2lab1.dir/student1_demo.cpp.obj	d39227afc8046860
-27	1273	7807822152889756	CMakeFiles/year2lab1.dir/experiment.cpp.obj	711bf5e902853bf1
-1275	1775	7807822165371567	year2lab1.exe	320b643e631bc0a6
-22	1081	7807823107678588	CMakeFiles/year2lab1.dir/main.cpp.obj	c584cf7da7072a3c
-1081	1256	7807823118270942	year2lab1.exe	320b643e631bc0a6
+41	795	7814935242551769	CMakeFiles/year2lab1.dir/Statistics.cpp.obj	4a88e896fba941be
+28	629	7814942489611189	CMakeFiles/year2lab1.dir/program_test.cpp.obj	620c5127a7fe0792
+28	638	7814950009837561	CMakeFiles/experiment_test.dir/programTest.cpp.obj	78a7b3e991f72baa
+33	873	7814950009888791	CMakeFiles/experiment_test.dir/Statistics.cpp.obj	574215c5dab2827e
+42	951	7814950009978953	CMakeFiles/experiment_test.dir/experiment.cpp.obj	83761dec35429d2a
+2	338	7814962454742133	build.ninja	470534ca852ac7e0
+27	439	7814962456184970	CMakeFiles/experiment_test.dir/Board.cpp.obj	a719eafd2d6a55e4
+440	598	7814962460317431	experiment_test.exe	bc212f547e9a96c5

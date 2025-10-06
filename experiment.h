@@ -5,7 +5,6 @@
 
 #include <vector>
 #include "Statistics.h"
-#include "RandomCell.h"
 
 using namespace std;
 
@@ -14,15 +13,15 @@ public:
     Experiment(int n, int m);
     ~Experiment();
 
-    void run();                 // запускає експеримент
-    void printResults() const;  // виводить mean і median
+    void run();
+    void printResults() const;
 
 private:
 
     int n; // board size
     int m; // quantity of choosing
     vector<int> frequencies;
-    Statistics* stats;          // вказівник на Statistics
+    Statistics* stats;
 };
 
 #endif

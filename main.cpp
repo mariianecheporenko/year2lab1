@@ -1,4 +1,3 @@
-// main.cpp
 // Compiler: g++ (C++20)
 
 #include <iostream>
@@ -8,15 +7,23 @@
 
 using namespace std;
 
+int input(const string& prompt) {
+    int value;
+    cout << prompt;
+    cin >> value;
+    if (cin.fail() || value <= 0) {
+        throw runtime_error("Invalid input: should a be positive number");
+    }
+    return value;
+}
+
 int main() {
     try {
-        int n, m;
-        cout << "Enter board size n: ";
-        cin >> n;
-        cout << "Enter number of picks m: ";
-        cin >> m;
 
-        cout << "RandomCell test";
+        int n = input("Enter board size n: ");
+        int m = input("Enter number of picks m: ");
+
+        cout << "RandomCell test\n";
         RandomCell generator(n);
 
         cout << "5 random cells on " << n << "x" << n << " board:\n";
@@ -30,7 +37,7 @@ int main() {
         exp.printResults();
     }
     catch (const exception& e) {
-        cerr << "Error: " << e.what() << '\n';
+        cerr << e.what() << '\n';
         return 1;
     }
 

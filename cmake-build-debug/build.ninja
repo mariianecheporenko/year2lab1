@@ -97,6 +97,63 @@ build year2lab1.exe: CXX_EXECUTABLE_LINKER__year2lab1_Debug CMakeFiles/year2lab1
   TARGET_IMPLIB = libyear2lab1.dll.a
   TARGET_PDB = year2lab1.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target experiment_test
+
+
+#############################################
+# Order-only phony target for experiment_test
+
+build cmake_object_order_depends_target_experiment_test: phony || .
+
+build CMakeFiles/experiment_test.dir/programTest.cpp.obj: CXX_COMPILER__experiment_test_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/programTest.cpp || cmake_object_order_depends_target_experiment_test
+  DEP_FILE = CMakeFiles\experiment_test.dir\programTest.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\experiment_test.dir
+
+build CMakeFiles/experiment_test.dir/Statistics.cpp.obj: CXX_COMPILER__experiment_test_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/Statistics.cpp || cmake_object_order_depends_target_experiment_test
+  DEP_FILE = CMakeFiles\experiment_test.dir\Statistics.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\experiment_test.dir
+
+build CMakeFiles/experiment_test.dir/Board.cpp.obj: CXX_COMPILER__experiment_test_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/Board.cpp || cmake_object_order_depends_target_experiment_test
+  DEP_FILE = CMakeFiles\experiment_test.dir\Board.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\experiment_test.dir
+
+build CMakeFiles/experiment_test.dir/RandomCell.cpp.obj: CXX_COMPILER__experiment_test_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/RandomCell.cpp || cmake_object_order_depends_target_experiment_test
+  DEP_FILE = CMakeFiles\experiment_test.dir\RandomCell.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\experiment_test.dir
+
+build CMakeFiles/experiment_test.dir/experiment.cpp.obj: CXX_COMPILER__experiment_test_unscanned_Debug C$:/Users/PC$ Home/Documents/GitHub/year2lab1/experiment.cpp || cmake_object_order_depends_target_experiment_test
+  DEP_FILE = CMakeFiles\experiment_test.dir\experiment.cpp.obj.d
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  OBJECT_FILE_DIR = CMakeFiles\experiment_test.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target experiment_test
+
+
+#############################################
+# Link the executable experiment_test.exe
+
+build experiment_test.exe: CXX_EXECUTABLE_LINKER__experiment_test_Debug CMakeFiles/experiment_test.dir/programTest.cpp.obj CMakeFiles/experiment_test.dir/Statistics.cpp.obj CMakeFiles/experiment_test.dir/Board.cpp.obj CMakeFiles/experiment_test.dir/RandomCell.cpp.obj CMakeFiles/experiment_test.dir/experiment.cpp.obj
+  FLAGS = -Wall -Wextra -Wconversion -Werror -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\experiment_test.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = experiment_test.exe
+  TARGET_IMPLIB = libexperiment_test.dll.a
+  TARGET_PDB = experiment_test.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -123,6 +180,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build experiment_test: phony experiment_test.exe
+
 build year2lab1: phony year2lab1.exe
 
 # =============================================================================
@@ -133,7 +192,7 @@ build year2lab1: phony year2lab1.exe
 #############################################
 # Folder: C:/Users/PC Home/Documents/GitHub/year2lab1/cmake-build-debug
 
-build all: phony year2lab1.exe
+build all: phony year2lab1.exe experiment_test.exe
 
 # =============================================================================
 # Built-in targets

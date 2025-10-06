@@ -1,18 +1,12 @@
 #include "Experiment.h"
+#include "RandomCell.h"
+#include "Board.h"
 #include <iostream>
-#include <stdexcept>
 
 using namespace std;
 
 Experiment::Experiment(int n, int m) : n(n), m(m), stats(nullptr) {
-    if (n <= 0) {
-        throw invalid_argument("Board size must be positive");
-    }
-    if (m < 0) {
-        throw invalid_argument("Number of picks m must be non-negative");
-    }
-
-    frequencies.assign(n * n, 0);
+     frequencies.assign(n * n, 0);
 }
 
 Experiment::~Experiment() {
@@ -20,17 +14,19 @@ Experiment::~Experiment() {
 }
 
 void Experiment::run() {
+    Board board(n);
     RandomCell gen(n);
 
     for (int i = 0; i < m; ++i) {
         auto [row, col] = gen();
-        size_t index = static_cast<size_t>(row) * static_cast<size_t>(n) + static_cast<size_t>(col);
+        size_t index = board.idx(row, col);
         ++frequencies[index];
     }
 
     delete stats;
     stats = new Statistics(frequencies.begin(), frequencies.end());
 }
+
 
 void Experiment::printResults() const {
     if (!stats) {
