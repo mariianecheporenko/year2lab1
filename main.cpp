@@ -23,15 +23,6 @@ int main() {
         int n = input("Enter board size n: ");
         int m = input("Enter number of picks m: ");
 
-        cout << "RandomCell test\n";
-        RandomCell generator(n);
-
-        cout << "5 random cells on " << n << "x" << n << " board:\n";
-        for (int i = 0; i < 5; i++) {
-            auto cell = generator();
-            cout << "(" << cell.first << ", " << cell.second << ")\n";
-        }
-
         Experiment exp(n, m);
         exp.run();
         exp.printResults();
